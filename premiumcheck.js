@@ -1,4 +1,4 @@
-console.log("PREMIUM CHECK LOADED");
+
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const supabase = createClient(
@@ -12,7 +12,7 @@ const supabase = createClient(
   } = await supabase.auth.getSession();
 
   // Not logged in → SIGN UP
-  if (!session) (
+  if (!session) {
     window.location.replace(
       "https://ilyasbusiness2011-dot.github.io/ilyas-s_website/signup.html"
     );
