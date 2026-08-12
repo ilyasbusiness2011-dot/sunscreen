@@ -1,3 +1,4 @@
+console.log("PREMIUM CHECK LOADED");
 import { createClient } from "https://esm.sh/@supabase/supabase-js@2";
 
 const supabase = createClient(
