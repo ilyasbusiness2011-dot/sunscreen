@@ -11,8 +11,7 @@ const supabase = createClient(
   } = await supabase.auth.getSession();
 
   // Not logged in → SIGN UP
-  if (!session) {
-    console.log("REDIRECTING TO SIGNUP");
+  if (!session) (
     window.location.replace(
       "https://ilyasbusiness2011-dot.github.io/ilyas-s_website/signup.html"
     );
