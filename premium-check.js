@@ -12,6 +12,7 @@ const supabase = createClient(
 
   // Not logged in → SIGN UP
   if (!session) {
+    console.log("REDIRECTING TO SIGNUP");
     window.location.replace(
       "https://ilyasbusiness2011-dot.github.io/ilyas-s_website/signup.html"
     );
